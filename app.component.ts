@@ -1,10 +1,12 @@
-// app.component.ts
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<app-lab-notebook></app-lab-notebook>'
+  template: `
+    <h1>Laboratory Notebook</h1>
+    <p>{{ description }}</p>
+  `
 })
 export class AppComponent {
-  title = 'lab-notebook';
+  description = 'This is a simple laboratory notebook application built using Angular.';
 }
